@@ -13,6 +13,7 @@ p {
   bottom: 0;
   left: 0;
   z-index: 2;
+  padding: 20px;
 }
 
 #logo {
@@ -33,9 +34,7 @@ p {
 /* DOWNLOAD BTN */
 
 #btn-download {
-  position: absolute;
-  right: 40px;
-  top: 40px;
+  position: relative;
   padding: 12px 30px;
   color: #000;
   text-transform: uppercase;
@@ -44,6 +43,20 @@ p {
   font-weight: 600;
   font-size: 14px;
   transition: 300ms ease-out;
+  width: 100%;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+@media (min-width: 667px) {
+  #btn-download {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    width: auto;
+  }
 }
 
 #btn-download:hover {
@@ -55,13 +68,15 @@ p {
 
 .slide .container {
   position: absolute;
+  display: none;
   left: 40px;
-  top: 80px;
+  top: 40px;
+  display: none;
 }
 
 @media (min-width: 667px) {
   .slide .container {
-    top: 40px;
+    display: block;
   }
 }
 
@@ -133,6 +148,18 @@ p {
 }
 
 /* ARROWS */
+.slides-navigation a {
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+}
+
+.slides-navigation .next {
+  right: 0;
+}
+.slides-navigation .prev {
+  left: 0;
+}
 
 i.arrows {
   background-image: url("../images/arrows.png");
