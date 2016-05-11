@@ -16,10 +16,18 @@ p {
 }
 
 #logo {
-  width: 70px;
   position: absolute;
   bottom: 40px;
   left: 40px;
+  transition: opacity 0.3s;
+}
+
+#logo img {
+  width: 70px;
+}
+
+#logo:hover {
+  opacity: 0.5;
 }
 
 /* DOWNLOAD BTN */
@@ -61,9 +69,17 @@ p {
   margin-left: 20px;
   font-size: 20px;
   opacity: 0;
-  transition: opacity 1s, transform 1s, -webkit-transform 1s;
+  -webkit-transition: opacity 1s ease-in, -webkit-transform 1s;
+     -moz-transition: opacity 1s ease-in, -moz-transform 1s;
+      -ms-transition: opacity 1s ease-in, -ms-transform 1s;
+       -o-transition: opacity 1s ease-in, -o-transform 1s;
+          transition: opacity 1s ease-in, transform 1s;
+
   -webkit-transform: translate3d(40px, 0, 0);
-  transform: translate3d(40px, 0, 0)
+     -moz-transform: translate3d(40px, 0, 0);
+      -ms-transform: translate3d(40px, 0, 0);
+       -o-transform: translate3d(40px, 0, 0);
+          transform: translate3d(40px, 0, 0);
 }
 
 @media (min-width: 667px) {
@@ -74,10 +90,13 @@ p {
   }
 }
 
-.slide.active .content {
+.slide.flex-active-slide .content {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+     -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+       -o-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 
 .slide .line {
@@ -87,10 +106,14 @@ p {
   bottom: 0;
   left: 0;
   opacity: 0;
-  transition: opacity 1s, ease-out 1s;
+  -webkit-transition: opacity 1s ease-in;
+     -moz-transition: opacity 1s ease-in;
+      -ms-transition: opacity 1s ease-in;
+       -o-transition: opacity 1s ease-in;
+          transition: opacity 1s ease-in;
 }
 
-.slide.active .line {
+.slide.flex-active-slide .line {
   opacity: 1;
 }
 
