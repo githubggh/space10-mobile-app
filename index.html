@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="stylesheets/normalize.css">
   <link rel="stylesheet" href="stylesheets/superslides.css">
   <link rel="stylesheet" href="stylesheets/animations.css">
+  <link rel="stylesheet" href="stylesheets/font-awesome.min.css">
   <link rel="stylesheet" href="stylesheets/custom.css">
 </head>
 <body>
@@ -71,8 +72,8 @@
     </nav>
 
     <div id="slides-common">
+      <a href="#" id="btn-download" class="btn-download"><i class="fa fa-lg fa-arrow-circle-o-down"></i> Download</a>
       <a href="https://www.space10.io"><img src="images/logo.svg" alt="Space10 logo" id="logo"></a>
-      <a href="#" id="btn-download" class="btn-download">Download</a>
     </div>
   </div>
 
@@ -84,7 +85,8 @@
     $(function() {
       $('#slides').superslides({
         hashchange: true,
-        pagination: false
+        pagination: false,
+        animation: 'fade'
       });
 
       $("#slides").on('animated.slides', function() {

@@ -16,25 +16,25 @@ p {
 }
 
 #logo {
-  width: 50px;
+  width: 70px;
   position: absolute;
-  top: 40px;
-  right: 40px;
+  bottom: 40px;
+  left: 40px;
 }
 
 /* DOWNLOAD BTN */
 
 #btn-download {
   position: absolute;
-  left: 40px;
-  bottom: 40px;
-  padding: 10px 25px;
+  right: 40px;
+  top: 40px;
+  padding: 12px 30px;
   color: #000;
   text-transform: uppercase;
   text-decoration: none;
   border: 1px solid #000;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
   transition: 300ms ease-out;
 }
 
